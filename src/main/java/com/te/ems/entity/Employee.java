@@ -1,6 +1,7 @@
 package com.te.ems.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -23,7 +24,7 @@ public class Employee {
     private LocalDate dateOfJoining;
     private Double salary;
 
-
+    @Enumerated
     private Gender gender;
 
 }
